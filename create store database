@@ -1,0 +1,21 @@
+CREATE TABLE store (id integer, item text,section text, price integer,popularity integer);
+
+INSERT INTO store VAlUES (1, "eggs", "produce", 4.99, 2);
+INSERT INTO store VALUES (2, "milk", "produce", 2.99, 6);
+INSERT INTO store VALUES (3, "butter", "produce", 2.00, 7);
+INSERT INTO store VALUES (4, "cheese","produce", 2.01, 10);
+INSERT INTO store VALUES (5, "sliced meat", "produce", 8.99, 14);
+INSERT INTO store VALUES (6, "yogurt", "produce", 3.99,3);
+INSERT INTO store VALUES (7, "tooth brush", "hygiene", 1.99, 9);
+INSERT INTO store VALUES (8, "tooth paste", "hygiene", 5.87, 1);
+INSERT INTO store VALUES (9, "floss", "hygiene", 0.99, 4);
+INSERT INTO store VALUES (10, "bread", "wheat", 2.99, 15);
+INSERT INTO store VALUES (11, "crackers", "wheat", 3.99,8);
+INSERT INTO store VALUES (12, "soda", "drinks", 5.99, 11);
+INSERT INTO store VALUES (13, "water", "drinks", 4.57, 13);
+INSERT INTO store VALUES (14, "milk" , "produce", 2.96, 20);
+INSERT INTO store VALUES (15, "body soap", "hygiene", 3.75, 21);
+
+SELECT * FROM store ORDER BY price desc;
+
+SELECT AVG(price) "wheat" FROM store
